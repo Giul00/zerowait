@@ -1,0 +1,1 @@
+docker run -d -p 3000:3000 -v C:\Users\gfernandez\Desktop\faceorder\imagenes:/app/imagenes -v C:\Users\gfernandez\Desktop\faceorder\clientes\clientes.json:/app/clientes/clientes.json  zerowait:latest_gpt

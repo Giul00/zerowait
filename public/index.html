@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ZeroWait - Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>ZeroWait: Asistente Gastronómico Inteligente</h1>
+  <div id="contenedor-video" style="position: relative; display: inline-block;">
+    <video id="video" width="720" height="560" autoplay muted></video>
+  </div>
+  <h2 id="saludo"></h2>
+  <h3 id="pedido"></h3>
+  <h3 id="oferta"></h3>
+  <div id="preguntas" style="display: none;">
+    <p>¿Vas a quedarte mucho rato o tomar algo rápido?</p>
+    <button id="quedarse">Quedarme</button>
+    <button id="rapido">Rápido</button>
+  </div>
+
+  <!-- Confirmar o rechazar pedido habitual -->
+  <button id="confirmarPedido" style="display: none;">¡Sí, el cliente quiere su pedido habitual!</button>
+  <button id="rechazarPedido" style="display: none;">No, el cliente no quiere su pedido habitual</button>
+
+  <!-- Pedido nuevo -->
+  <div id="pedidoNuevoDiv" style="display: none; margin-top: 10px;">
+    <input type="text" id="pedidoNuevo" placeholder="Ingrese nuevo pedido">
+    <button id="enviarPedidoNuevo">Enviar nuevo pedido</button>
+  </div>
+
+  <!-- Mensaje final -->
+  <div id="mensajePedido" style="display: none; font-size: 20px; font-weight: bold; color: green; margin-top: 10px;"></div>
+
+  <!-- Registro nuevo cliente -->
+  <button id="registrarCliente">Registrar nuevo cliente</button>
+  <div id="formRegistro" style="display: none; margin-top: 10px;">
+    <input type="text" id="nombre" placeholder="Nombre"><br>
+    <input type="text" id="edad" placeholder="Edad"><br>    
+    <input type="text" id="pedidoRegistro" placeholder="Pedido habitual"><br>
+    <button id="guardarCliente">Guardar cliente</button>
+  </div>
+
+  <!-- Oferta edad -->
+  <div id="ofertaEdad" style="margin-top: 15px; font-weight: bold;"></div>
+
+  <script src="libs/face-api.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+[
+  {
+    "nombre": "Franco",
+    "pedido": "Jugo de naranja y tostado",
+    "edad": 25,
+    "imagen": "/imagenes/franco.png"
+  },
+  {
+    "nombre": "Gabriel",
+    "pedido": "Mate con bizcochos",
+    "edad": 35,
+    "imagen": "/imagenes/gabriel.png"
+  },
+  {
+    "nombre": "Bernardo Rshaid",
+    "pedido": "Mate con chipá",
+    "edad": 36,
+    "imagen": "/imagenes/bernardo.jpg"
+  },
+  {
+    "nombre": "Facundo Zogbe",
+    "pedido": "Flat White con Croissant",
+    "edad": 31,
+    "imagen": "/imagenes/facundo.png"
+  },
+  {
+    "nombre": "Juan Manuel",
+    "pedido": "Choripan con Birra",
+    "edad": 38,
+    "imagen": "/imagenes/juan.png"
+  },
+  {
+    "nombre": "Tomas",
+    "pedido": "Hamburguesa con coca de vidrio",
+    "edad": 36,
+    "imagen": "/imagenes/tomas.png"
+  },
+  {
+    "nombre": "Giuliano",
+    "pedido": "Cafe con medialunas",
+    "edad": 28,
+    "imagen": "/imagenes/Giuliano.jpg"
+  },
+  {
+    "nombre": "Franco",
+    "pedido": "Jugo de naranja y tostado",
+    "edad": 25,
+    "imagen": "/imagenes/franco.png"
+  },
+  {
+    "nombre": "Gabriel",
+    "pedido": "Mate con bizcochos",
+    "edad": 35,
+    "imagen": "/imagenes/gabriel.png"
+  },
+  {
+    "nombre": "Bernardo Rshaid",
+    "pedido": "Mate con chipá",
+    "edad": 36,
+    "imagen": "/imagenes/bernardo.jpg"
+  },
+  {
+    "nombre": "bernardo",
+    "pedido": "cafe",
+    "edad": 37,
+    "imagen": "/imagenes/bernardo.jpg"
+  }
+]
