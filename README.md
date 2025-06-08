@@ -22,7 +22,7 @@
 
 ```
 
-faceorder/│
+zerowait/│
 ├── Dockerfile
 ├── server.js
 ├── registroRoutes.js
@@ -41,7 +41,7 @@ faceorder/│
 │   ├── models/               # Modelos preentrenados de face-api.js
 │   └── libs/                 # Librería face-api.min.js
 
-````
+```
 
 ---
 
@@ -62,7 +62,7 @@ faceorder/│
    ```bash
    git clone https://github.com/tuusuario/zerowait.git
    cd zerowait
-````
+```
 
 2. Construir la imagen:
 
