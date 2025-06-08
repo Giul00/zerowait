@@ -15,6 +15,7 @@
 - 🔁 Flujo completo de confirmación de pedido o ingreso de un nuevo pedido.
 - 🧠 Uso de inteligencia artificial local (face-api.js) sin conexión a la nube.
 - 🔐 Toda la información se guarda localmente en archivos `.json` y carpetas persistidas por volumen de Docker.
+- 🌙 Interfaz con modo oscuro opcional.
 
 ---
 
