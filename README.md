@@ -1,4 +1,5 @@
-```markdown
+---
+
 # 🧠 ZeroWait – Asistente Gastronómico Inteligente
 
 **ZeroWait** es un sistema inteligente basado en reconocimiento facial que personaliza la experiencia del cliente en locales gastronómicos, al mismo tiempo que mejora la eficiencia operativa. Fue desarrollado como una prueba de concepto (PoC) para un proyecto universitario de innovación digital.
