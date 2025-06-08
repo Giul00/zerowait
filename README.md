@@ -1,5 +1,3 @@
----
-
 ```markdown
 # 🧠 ZeroWait – Asistente Gastronómico Inteligente
 
