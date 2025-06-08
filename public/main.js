@@ -8,6 +8,22 @@ document.addEventListener('DOMContentLoaded', async () => {
   const pedidoNuevoDiv = document.getElementById('pedidoNuevoDiv');
   const inputNuevo = document.getElementById('pedidoNuevo');
   const enviarNuevo = document.getElementById('enviarPedidoNuevo');
+  const toggleDark = document.getElementById('toggleDark');
+
+  function applyTheme() {
+    const dark = localStorage.getItem('darkMode') === 'true';
+    document.body.classList.toggle('dark-mode', dark);
+    toggleDark.textContent = dark ? 'Modo Claro' : 'Modo Oscuro';
+  }
+
+  toggleDark.addEventListener('click', () => {
+    const isDark = !document.body.classList.contains('dark-mode');
+    document.body.classList.toggle('dark-mode', isDark);
+    localStorage.setItem('darkMode', isDark);
+    toggleDark.textContent = isDark ? 'Modo Claro' : 'Modo Oscuro';
+  });
+
+  applyTheme();
 
   let clienteActual = null;
   let yaSaludado = false;
