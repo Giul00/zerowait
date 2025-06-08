@@ -36,12 +36,6 @@
     "imagen": "/imagenes/tomas.png"
   },
   {
-    "nombre": "Giuliano",
-    "pedido": "Cafe con medialunas",
-    "edad": 28,
-    "imagen": "/imagenes/Giuliano.jpg"
-  },
-  {
     "nombre": "Franco",
     "pedido": "Jugo de naranja y tostado",
     "edad": 25,
