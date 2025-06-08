@@ -1,3 +1,5 @@
+---
+
 ```markdown
 # 🧠 ZeroWait – Asistente Gastronómico Inteligente
 
@@ -41,7 +43,7 @@ zerowait/│
 │   ├── models/               # Modelos preentrenados de face-api.js
 │   └── libs/                 # Librería face-api.min.js
 
-```
+````
 
 ---
 
@@ -62,7 +64,7 @@ zerowait/│
    ```bash
    git clone https://github.com/tuusuario/zerowait.git
    cd zerowait
-```
+````
 
 2. Construir la imagen:
 
@@ -124,5 +126,3 @@ zerowait/│
 ---
 
 Desarrollado por Giuliano Fernandez – Proyecto académico para la carrera de Tecnologías Digitales, 2025- UNICABA
-
-```
