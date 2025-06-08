@@ -3,6 +3,7 @@
 ## 🧠 ZeroWait – Asistente Gastronómico Inteligente
 
 ---
+
 **ZeroWait** es un sistema inteligente basado en reconocimiento facial que personaliza la experiencia del cliente en locales gastronómicos, al mismo tiempo que mejora la eficiencia operativa. Fue desarrollado como una prueba de concepto (PoC) para un proyecto universitario de innovación digital.
 
 ---
@@ -22,9 +23,8 @@
 
 ## 📁 Estructura del Proyecto
 
-```
-
-zerowait/│
+```plaintext
+zerowait/
 ├── Dockerfile
 ├── server.js
 ├── registroRoutes.js
@@ -34,7 +34,7 @@ zerowait/│
 │   └── clientes.json
 │
 ├── imagenes/                 # Contiene las imágenes de los clientes
-│   └── \*.jpg
+│   └── *.jpg
 │
 ├── public/
 │   ├── index.html            # Interfaz principal
@@ -42,8 +42,7 @@ zerowait/│
 │   ├── style.css             # Estilos visuales
 │   ├── models/               # Modelos preentrenados de face-api.js
 │   └── libs/                 # Librería face-api.min.js
-
-````
+```
 
 ---
 
@@ -61,10 +60,11 @@ zerowait/│
 ## 🐳 Cómo ejecutar el proyecto con Docker
 
 1. Clonar el repositorio:
+
    ```bash
    git clone https://github.com/tuusuario/zerowait.git
    cd zerowait
-````
+   ```
 
 2. Construir la imagen:
 
@@ -80,7 +80,7 @@ zerowait/│
 
 4. Acceder desde el navegador:
 
-   ```
+   ```text
    http://localhost:3000
    ```
 
@@ -111,18 +111,18 @@ zerowait/│
 
 ## 💡 Casos de uso
 
-* Locales gastronómicos que desean reducir los tiempos de atención.
-* Franquicias pequeñas o medianas que buscan **homogeneizar la experiencia del cliente** sin depender de la memoria del personal.
-* Implementación como módulo en un sistema POS existente.
+- Locales gastronómicos que desean reducir los tiempos de atención.
+- Franquicias pequeñas o medianas que buscan **homogeneizar la experiencia del cliente** sin depender de la memoria del personal.
+- Implementación como módulo en un sistema POS existente.
 
 ---
 
 ## 📌 Notas finales
 
-* Este proyecto es una prueba de concepto diseñada para funcionar **sin conexión a internet** una vez que los modelos están descargados.
-* Todos los datos son almacenados localmente. No hay envío a servidores externos.
-* La interfaz está preparada para seguir creciendo e integrarse a una base de datos más robusta en producción.
+- Este proyecto es una prueba de concepto diseñada para funcionar **sin conexión a internet** una vez que los modelos están descargados.
+- Todos los datos son almacenados localmente. No hay envío a servidores externos.
+- La interfaz está preparada para seguir creciendo e integrarse a una base de datos más robusta en producción.
 
 ---
 
-Desarrollado por Giuliano Fernandez – Proyecto académico para la carrera de Tecnologías Digitales, 2025- UNICABA
+Desarrollado por **Giuliano Fernandez** – Proyecto académico para la carrera de **Tecnologías Digitales**, 2025 – UNICABA
