@@ -9,10 +9,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   const inputNuevo = document.getElementById('pedidoNuevo');
   const enviarNuevo = document.getElementById('enviarPedidoNuevo');
   const toggleDark = document.getElementById('toggleDark');
-  const duplicates = document.querySelectorAll('#toggleDark');
-  if (duplicates.length > 1) {
-    for (let i = 1; i < duplicates.length; i++) duplicates[i].remove();
-  }
 
   function applyTheme() {
     const dark = localStorage.getItem('darkMode') === 'true';
