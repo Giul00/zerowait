@@ -7,6 +7,12 @@ const PORT = process.env.PORT || 3000;
 
 const registroRoutes = require('./registroRoutes');
 
+// Ensure the "imagenes" directory exists for uploads
+const imagenesPath = path.join(__dirname, 'imagenes');
+if (!fs.existsSync(imagenesPath)) {
+  fs.mkdirSync(imagenesPath, { recursive: true });
+}
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
