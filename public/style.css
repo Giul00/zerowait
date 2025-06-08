@@ -1,6 +1,6 @@
 :root {
   --bg-color: #e6f7ff;
-  --text-color: #333;
+  --text-color: #00008b;
   --primary-color: #007acc;
   --primary-hover: #005f99;
 }
@@ -45,10 +45,11 @@ canvas {
 
 button {
   padding: 12px 24px;
-  font-size: 16px;
+  font-size: 18px;
   margin: 12px 8px;
   background-color: var(--primary-color);
   color: var(--text-color);
+  font-weight: bold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -61,7 +62,7 @@ button:hover {
 
 input[type="text"] {
   padding: 10px;
-  font-size: 16px;
+  font-size: 18px;
   margin: 8px 0;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -73,7 +74,7 @@ input[type="text"] {
   margin-top: 25px;
   font-weight: bold;
   color: var(--primary-hover);
-  font-size: 22px;
+  font-size: 32px;
 }
 
 #toggleDark {
