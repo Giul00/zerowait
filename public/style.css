@@ -73,6 +73,12 @@ input[type="text"] {
   margin-top: 25px;
   font-weight: bold;
   color: var(--primary-hover);
+  font-size: 22px;
+}
+
+#toggleDark {
+  display: block;
+  margin: 0 auto 10px;
 }
 
 #contenedor-video {
