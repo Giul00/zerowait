@@ -124,3 +124,5 @@ faceorder/│
 ---
 
 Desarrollado por Giuliano Fernandez – Proyecto académico para la carrera de Tecnologías Digitales, 2025- UNICABA
+
+```

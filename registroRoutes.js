@@ -7,16 +7,25 @@ const router = express.Router();
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => cb(null, path.join(__dirname, 'imagenes')),
-  filename: (req, file, cb) => cb(null, file.originalname)
+  filename: (req, file, cb) => {
+    const ext = path.extname(file.originalname);
+    const base = path
+      .basename(file.originalname, ext)
+      .replace(/\s+/g, '_')
+      .replace(/[^a-zA-Z0-9_-]/g, '');
+    cb(null, `${Date.now()}_${base}${ext}`);
+  }
 });
 
 const upload = multer({ storage });
 
 router.post('/api/registro', upload.single('imagen'), (req, res) => {
   const { nombre, pedido, edad } = req.body;
+  const nombreTrim = nombre ? nombre.trim() : '';
+  const pedidoTrim = pedido ? pedido.trim() : '';
   const clientesPath = path.join(__dirname, 'clientes', 'clientes.json');
 
-  if (!nombre || !pedido || !edad || !req.file) {
+  if (!nombreTrim || !pedidoTrim || !edad || !req.file) {
     return res.status(400).send('Faltan datos');
   }
 
@@ -30,12 +39,12 @@ router.post('/api/registro', upload.single('imagen'), (req, res) => {
       return res.status(500).send('Error parseando JSON');
     }
 
-    const yaExiste = clientes.find(c => c.nombre.toLowerCase() === nombre.toLowerCase());
+    const yaExiste = clientes.find(c => c.nombre.trim().toLowerCase() === nombreTrim.toLowerCase());
     if (yaExiste) return res.status(409).send('Cliente ya registrado');
 
     const nuevoCliente = {
-      nombre,
-      pedido,
+      nombre: nombreTrim,
+      pedido: pedidoTrim,
       edad: parseInt(edad),
       imagen: `/imagenes/${req.file.filename}`
     };
